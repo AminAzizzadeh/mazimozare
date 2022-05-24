@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'title';
     src: url('../fonts/18 Khebrat Musamim Bold.woff2') format('woff2'),
-         url('../fonts/18 Khebrat Musamim Bold.woff2') format('woff');
+    url('../fonts/18 Khebrat Musamim Bold.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +9,15 @@
 @font-face {
     font-family: 'txt';
     src: url('../fonts/(A) Arslan Wessam B (A) Arslan Wessam B (convert.io).woff2') format('woff2'),
-         url('../fonts/(A) Arslan Wessam B (A) Arslan Wessam B (convert.io).woff2') format('woff');
+    url('../fonts/(A) Arslan Wessam B (A) Arslan Wessam B (convert.io).woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'info';
+    src: url('../fonts/Antro_Vectra_Bolder.woff2'),
+    url('../fonts/Antro_Vectra_Bolder.woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,11 +25,11 @@
 body{
     background-color: #f4a261;
     font-family: txt;
-    font-size: calc(2vw + 20px);
 }
 
 input{
     height: 4vw;
+    font-size: 3.25vw;
     font-family: txt;
     margin-top: 1%;
     margin-left: 25%;
@@ -37,17 +45,18 @@ input{
 }
 
 select{
+    margin-top: 1vw;
+    padding: 0.3vw;
     font-family: title;
-    font-size: calc(2vw + 15px);
+    font-size: 2.9vw;
     color: #e9c46a;
     background-color: #264653;
     border: 1px solid #2a9d8f;
     border-radius: 0.5vw;   
-    padding: 0.3vw; 
 }
 
 #firstSelect{
-    margin-left: 16.12%;
+    margin-left: 16.5vw;
 }
 
 option{
@@ -59,9 +68,9 @@ option{
 }
 
 button{
-    margin-top: 1vw;
+    margin-top: 1.5vw;
     font-family: title;
-    font-size: calc(2vw + 20px);
+    font-size: calc(3vw);
     color: #e9c46a;
     background-color: #264653;
     border: 1px solid #2a9d8f;
@@ -73,6 +82,7 @@ button{
 }
 
 #result{
+    margin-top: 3vw;
     color: #e9c46a;
     background-color: #264653;
     border: 1px solid #2a9d8f;
@@ -82,11 +92,37 @@ button{
 
 .resultValue{
     font-family: txt;
-    font-size: calc(6.5vw + 25px);
+    font-size: 7vw;
     color: #e9c46a;
     text-align: center;
 }
 
 .hidden{
     display: none;
+}
+
+#information{
+    position: absolute;
+    padding-right: 0.5vw;
+    padding-bottom: 1vw;
+    right: 0;
+    bottom: 0;
+}
+
+#informationData{
+    color: white;
+    font-size: 1.75vw; 
+    text-align: center;
+    font-family: info;
+}
+
+a{
+    color: #264653;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #2a9d8f;
+    text-decoration: none;
 }
