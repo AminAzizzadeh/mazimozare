@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'title';
     src: url('../fonts/18 Khebrat Musamim Bold.woff2') format('woff2'),
-    url('../fonts/18 Khebrat Musamim Bold.woff2') format('woff');
+        url('../fonts/18 Khebrat Musamim Bold.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'txt';
     src: url('../fonts/(A) Arslan Wessam B (A) Arslan Wessam B (convert.io).woff2') format('woff2'),
-    url('../fonts/(A) Arslan Wessam B (A) Arslan Wessam B (convert.io).woff2') format('woff');
+        url('../fonts/(A) Arslan Wessam B (A) Arslan Wessam B (convert.io).woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,17 +17,17 @@
 @font-face {
     font-family: 'info';
     src: url('../fonts/Antro_Vectra_Bolder.woff2'),
-    url('../fonts/Antro_Vectra_Bolder.woff2');
+        url('../fonts/Antro_Vectra_Bolder.woff2');
     font-weight: normal;
     font-style: normal;
 }
 
-body{
+body {
     background-color: #f4a261;
     font-family: txt;
 }
 
-input{
+input {
     height: 4vw;
     font-size: 3.25vw;
     font-family: txt;
@@ -40,11 +40,12 @@ input{
     text-align: center;
 }
 
-#filter{
+#filter {
     margin-top: 1vw;
 }
 
-select{
+select {
+    height: 7vw;
     margin-top: 1vw;
     padding: 0.3vw;
     font-family: title;
@@ -52,56 +53,56 @@ select{
     color: #e9c46a;
     background-color: #264653;
     border: 1px solid #2a9d8f;
-    border-radius: 0.5vw;   
+    border-radius: 0.5vw;
 }
 
-#firstSelect{
+#firstSelect {
     margin-left: 16.5vw;
 }
 
-option{
+option {
     font-size: calc(2vw + 10px);
     color: #e9c46a;
     background-color: #264653;
     border: 1px solid #2a9d8f;
-    border-radius: 0.5vw;   
+    border-radius: 0.5vw;
 }
 
-button{
+button {
     margin-top: 1.5vw;
     font-family: title;
     font-size: calc(3vw);
     color: #e9c46a;
     background-color: #264653;
     border: 1px solid #2a9d8f;
-    border-radius: 0.5vw;   
+    border-radius: 0.5vw;
 }
 
-.find{
-    margin-left:33.3333%;
+.find {
+    margin-left: 33.3333%;
 }
 
-#result{
+#result {
     margin-top: 3vw;
     color: #e9c46a;
     background-color: #264653;
     border: 1px solid #2a9d8f;
-    border-radius: 0.5vw; 
-    height: 11vw;  
+    border-radius: 0.5vw;
+    height: 11vw;
 }
 
-.resultValue{
+.resultValue {
     font-family: txt;
     font-size: 7vw;
     color: #e9c46a;
     text-align: center;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-#information{
+#information {
     position: absolute;
     padding-right: 0.5vw;
     padding-bottom: 1vw;
@@ -109,20 +110,20 @@ button{
     bottom: 0;
 }
 
-#informationData{
+#informationData {
     color: white;
-    font-size: 1.75vw; 
+    font-size: 1.75vw;
     text-align: center;
     font-family: info;
 }
 
-a{
+a {
     color: #264653;
     font-size: 2vw;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #2a9d8f;
     text-decoration: none;
 }
