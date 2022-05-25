@@ -197,6 +197,8 @@ document.querySelector("body").addEventListener("click", function(){
 })
 
 document.querySelector(".randomize").addEventListener("click", function(){
+    result.textContent = "";
+
     randomizer1 = Math.floor(Math.random() * 3) + 1;
     randomizer2 = Math.floor(Math.random() * 2) + 1;
     randomizer3 = Math.floor(Math.random() * 3) + 1;
@@ -204,14 +206,23 @@ document.querySelector(".randomize").addEventListener("click", function(){
 
     if(randomizer1 == 1){
         s[0].value = o[1].value;
+        change[0].classList.remove("hidden");
+        change[1].textContent = "مثني";
+        change[2].textContent = "جمع"; 
     }
     
     if(randomizer1 == 2){
         s[0].value = o[2].value;
+        change[0].classList.remove("hidden");
+        change[1].textContent = "مثني";
+        change[2].textContent = "جمع"; 
     }
 
     if(randomizer1 == 3){
         s[0].value = o[3].value;
+        change[0].classList.add("hidden");
+        change[1].textContent = "وحده";
+        change[2].textContent = "مع الغير";
     }
     
     if(randomizer2 == 1){
@@ -221,16 +232,21 @@ document.querySelector(".randomize").addEventListener("click", function(){
     if(randomizer2 == 2){
         s[1].value = o[6].value;
     }
-
-    if(randomizer3 == 3){
-        s[2].value = o[8].value;
-    }
     
     if(randomizer3 == 1){
-        s[2].value = o[9].value;
+        if(randomizer1 == 3){
+            s[2].value = Math.floor(Math.random() * 3) + 2;
+        }
+        else{
+            s[2].value = o[8].value;
+        }
     }
 
     if(randomizer3 == 2){
+        s[2].value = o[9].value;
+    }
+
+    if(randomizer3 == 3){
         s[2].value = o[10].value;
     }
     
