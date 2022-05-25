@@ -29,7 +29,7 @@ body {
 
 input {
     height: 6vw;
-    font-size: 3.25vw;
+    font-size: 5vw;
     font-family: txt;
     margin-top: 1%;
     margin-left: 25%;
@@ -122,10 +122,8 @@ button {
 a {
     color: #264653;
     font-size: 2vw;
-    text-decoration: none;
 }
 
 a:hover {
     color: #2a9d8f;
-    text-decoration: none;
 }
