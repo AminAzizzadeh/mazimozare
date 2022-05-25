@@ -235,7 +235,7 @@ document.querySelector(".randomize").addEventListener("click", function(){
     
     if(randomizer3 == 1){
         if(randomizer1 == 3){
-            s[2].value = Math.floor(Math.random() * 3) + 2;
+            s[2].value = o[8 + Math.floor(Math.random() * 2) + 1].value;
         }
         else{
             s[2].value = o[8].value;
