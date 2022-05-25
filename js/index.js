@@ -204,10 +204,6 @@ document.querySelector(".randomize").addEventListener("click", function(){
     randomizer3 = Math.floor(Math.random() * 3) + 1;
     randomizer4 = Math.floor(Math.random() * 2) + 1;
 
-    if(randomizer1 == 3 && randomizer3 == 1){
-        randomizer3 = Math.floor(Math.random() * 3) + 2;
-    }
-
     if(randomizer1 == 1){
         s[0].value = o[1].value;
         change[0].classList.remove("hidden");
@@ -238,7 +234,12 @@ document.querySelector(".randomize").addEventListener("click", function(){
     }
     
     if(randomizer3 == 1){
-        s[2].value = o[8].value;
+        if(randomizer1 == 3){
+            s[2].value = Math.floor(Math.random() * 3) + 2;
+        }
+        else{
+            s[2].value = o[8].value;
+        }
     }
 
     if(randomizer3 == 2){
