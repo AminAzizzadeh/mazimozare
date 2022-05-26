@@ -13,6 +13,10 @@ let randomizer3 = Number;
 let randomizer4 = Number;
 
 document.querySelector(".find").addEventListener("click", function () {
+    if (s[0].value == "") {
+        s1 = 0;
+    }
+
     if (s[0].value == "غائب") {
         s1 = 1;
     }
@@ -25,18 +29,26 @@ document.querySelector(".find").addEventListener("click", function () {
         s1 = 3;
     }
 
+    if (s[1].value == "") {
+        s2 = 0;
+    }
+ 
     if (s[1].value == "مذكر") {
         s2 = 1;
     }
-
+ 
     if (s[1].value == "مؤنث") {
         s2 = 2;
     }
 
+    if (s[2].value == "") {
+        s3 = 0;
+    }
+ 
     if (s[2].value == "مفرد") {
         s3 = 1;
     }
-
+ 
     if (s[2].value == "مثني" || s[2].value == "وحده") {
         s3 = 2;
     }
@@ -45,10 +57,14 @@ document.querySelector(".find").addEventListener("click", function () {
         s3 = 3;
     }
 
+    if (s[3].value == "") {
+        s4 = 0;
+    }
+ 
     if (s[3].value == "ماضي") {
         s4 = 1;
     }
-
+ 
     if (s[3].value == "مضارع") {
         s4 = 2;
     }
