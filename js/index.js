@@ -203,7 +203,6 @@ document.querySelector("body").addEventListener("click", function () {
         change[0].classList.add("hidden");
         change[1].textContent = "وحده";
         change[2].textContent = "مع الغير";
-
     }
     else {
         change[0].classList.remove("hidden");
