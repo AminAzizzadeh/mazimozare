@@ -13,6 +13,26 @@ let randomizer3 = Number;
 let randomizer4 = Number;
 
 document.querySelector(".find").addEventListener("click", function () {
+
+    let txt;
+    txt = feal.value;
+    let txtNoAEO = txt.replaceAll('َ' , '').replaceAll('ُ' , '').replaceAll('ِ' , '');
+    let txtNoAEOLenght = txtNoAEO.length;
+
+    if(txtNoAEOLenght == 3){
+        if(feal.value.indexOf("ِ") == 1 && feal.value.indexOf("و") == 2){ 
+            feal.value = txtNoAEO.replaceAll('و' , 'ی');
+        }
+        else{
+            if(feal.value.indexOf("ِ") == 3 && feal.value.indexOf("و") == 4 && feal.value.length <= 6){ 
+                feal.value = txtNoAEO.replaceAll('و' , 'ی');
+            }
+            else{
+                feal.value = txtNoAEO;
+            }
+        }
+    }
+
     if (s[0].value == "") {
         s1 = 0;
     }
